@@ -92,18 +92,23 @@ jQuery(document).ready(function($) {
     else var str = $(this).serialize();
     $.ajax({
       type: "POST",
-      url: "contactform/contactform.php",
+      url: "https://formspree.io/giovanniantonaccio@gmail.com",
       data: str,
+      //dataType: "json",
       success: function(msg) {
         // alert(msg);
         if (msg == 'OK') {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
           $('.contactForm').find("input, textarea").val("");
+          console.log(msg)
         } else {
-          $("#sendmessage").removeClass("show");
-          $("#errormessage").addClass("show");
-          $('#errormessage').html(msg);
+          console.log(str)
+          $("body").html(msg)
+          //$("#sendmessage").removeClass("show");
+          //$("#errormessage").addClass("show");
+          //$('#errormessage').html(msg);
+          console.log(msg)
         }
 
       }

@@ -151,7 +151,7 @@
                         <h2 class="title">Nossa Missão</h2>
                         <p class="text-justify">
                             Por meio de amplo conhecimento de mercado e vasta experiência no comercio exterior, a
-                            Geolink tem o compromisso de buscar e implantar soluções pineiras que otimizem o transporte
+                            Geolink tem o compromisso de buscar e implantar soluções pioneiras que otimizem o transporte
                             internacional, oferecendo melhor custo-benefício ao cliente.
                         </p>
                     </div>
@@ -308,8 +308,7 @@
 
             <div class="form">
                 <div id="sendmessage">Sua mensagem foi enviada! Obrigado!</div>
-                <div id="errormessage"></div>
-                <form action="https://formspree.io/giovanniantonaccio@gmail.com" method="post" role="form" class="contactForm">
+                <form action="" method="post" role="form" class="contactForm">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome"
@@ -335,8 +334,15 @@
                     <div class="text-center">
                         <button type="submit">Enviar Mensagem</button>
                     </div>
+                    <input type="hidden" name="_subject" value="Nova mensagem no site!" />
+                    <input type="hidden" name="_next" value="https://giovanniantonaccio.github.io/geolinkbr/thanks.html" />
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <input type="hidden" name="_language" value="pt-BR" />
+                    <input type="hidden" name="_format" value="plain" />
                 </form>
             </div>
+
+            <div id="errormessage"></div>
 
         </div>
     </section><!-- #contact -->
