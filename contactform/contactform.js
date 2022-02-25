@@ -92,7 +92,7 @@ jQuery(document).ready(function($) {
     else var str = $(this).serialize();
     $.ajax({
       type: "POST",
-      url: "https://formspree.io/augustobessa@geolink.com.br",
+      url: "https://formspree.io/f/xgedkgpb",
       data: str,
       //dataType: "json",
       success: function(msg) {
